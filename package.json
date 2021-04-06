@@ -19,7 +19,6 @@
     "node-red-node-rbe": "latest",
     "node-red-node-feedparser": "latest",
     "node-red-contrib-play-audio": "latest",
-    "bartbutenaers/node-red-contrib-onvif-nodes": "latest",
     "node-red-contrib-ui-joystick": "latest"
   }
 }
