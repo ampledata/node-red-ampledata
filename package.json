@@ -1,6 +1,6 @@
 {
   "name": "node-red-ampledata",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Visual workflow engine, @ampledata mods.",
   "scripts": {
     "start": "./node_modules/.bin/node-red -s ./settings.js"
@@ -21,6 +21,7 @@
     "node-red-contrib-play-audio": "latest",
     "node-red-contrib-ui-joystick": "latest",
     "node-red-contrib-tcp-tls": "latest",
-    "node-red-contrib-filter": "latest"
+    "node-red-contrib-filter": "latest",
+    "node-red-contrib-amazon-ses": "latest"
   }
 }
