@@ -26,6 +26,7 @@
     "node-red-contrib-nmea": "latest",
     "node-red-node-twitter": "latest",
     "node-red-node-tail": "latest",
-    "node-red-contrib-cheerio": "latest"
+    "node-red-contrib-cheerio": "latest",
+    "node-red-contrib-cheerio-function": "latest"
   }
 }
