@@ -1,6 +1,6 @@
 {
   "name": "node-red-ampledata",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Visual workflow engine, @ampledata mods.",
   "scripts": {
     "start": "./node_modules/.bin/node-red -s ./settings.js"
@@ -26,7 +26,6 @@
     "node-red-contrib-nmea": "latest",
     "node-red-node-twitter": "latest",
     "node-red-node-tail": "latest",
-    "node-red-contrib-cheerio": "latest",
     "node-red-contrib-cheerio-function": "latest"
   }
 }
