@@ -215,7 +215,8 @@ module.exports = {
     //    global.get("os")
     functionGlobalContext: {
         process: process,
-        os: require('os')
+        os: require('os'),
+        url: require('url')
     },
     // `global.keys()` returns a list of all properties set in global context.
     // This allows them to be displayed in the Context Sidebar within the editor.

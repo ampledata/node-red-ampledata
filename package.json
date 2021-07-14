@@ -1,6 +1,6 @@
 {
   "name": "node-red-ampledata",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Visual workflow engine, @ampledata mods.",
   "scripts": {
     "start": "./node_modules/.bin/node-red -s ./settings.js"
