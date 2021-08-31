@@ -266,6 +266,9 @@ module.exports = {
 
     // Customising the editor
     editorTheme: {
+        codeEditor: {
+            lib: "monaco"
+        },
         projects: {
             // To enable the Projects feature, set this value to true
             enabled: false
