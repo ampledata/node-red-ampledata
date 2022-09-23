@@ -1,33 +1,24 @@
 {
   "name": "node-red-ampledata",
-  "version": "1.0.10",
+  "version": "3.0.0",
   "description": "Visual workflow engine, @ampledata mods.",
   "scripts": {
     "start": "./node_modules/.bin/node-red -s ./settings.js"
   },
   "dependencies": {
-    "node-red": "^2.0.5",
-    "@orionlabs/node-orion": "^1.5.2",
+    "node-red": "^3.0.2",
+    "node-red-contrib-aprs": "^2.0.3",
+    "node-red-contrib-tak": "^2.0.0",
     "node-red-contrib-orion": "^4.5.5",
-    "node-red-contrib-web-worldmap": "^2.15.5",
+    "node-red-contrib-web-worldmap": "^2.29.0",
     "node-red-contrib-aprsfi": "^0.0.4",
     "node-red-contrib-aprs-parser": "^0.0.1",
-    "node-red-node-watson": "^0.9.5",
-    "node-red-dashboard": "^2.30.0",
-    "node-red-node-geofence": "^0.3.0",
+    "node-red-dashboard": "^3.2.0",
+    "node-red-node-geofence": "^0.3.4",
     "node-red-node-twilio": "^0.1.0",
-    "node-red-node-feedparser": "^0.2.1",
-    "node-red-contrib-play-audio": "^2.5.0",
-    "node-red-contrib-ui-joystick": "^1.0.0",
-    "node-red-contrib-filter": "^0.1.4",
-    "node-red-contrib-amazon-ses": "^1.0.0",
-    "node-red-contrib-nmea": "^0.0.4",
-    "node-red-node-twitter": "^1.2.0",
-    "node-red-node-tail": "^0.3.1",
-    "node-red-contrib-cheerio-function": "^1.0.0-rc.9",
-    "node-red-node-serialport": "^0.14.1",
-    "node-red-contrib-influxdb": "^0.6.1",
-    "node-red-contrib-multifeed-parser": "^0.0.3",
-    "node-red-node-rbe": "^0.5.0"
+    "node-red-contrib-influxdb": "^0.6.1"
+  },
+  "engines": {
+    "node": ">=12"
   }
 }

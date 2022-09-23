@@ -69,7 +69,7 @@ module.exports = {
 
     // To enabled pretty-printing of the flow within the flow file, set the following
     //  property to true:
-    //flowFilePretty: true,
+    flowFilePretty: true,
 
     // By default, credentials are encrypted in storage using a generated key. To
     // specify your own secret, set the following property.
@@ -243,6 +243,32 @@ module.exports = {
     // added to the end of the palette.
     // If not set, the following default order is used:
     //paletteCategories: ['subflows', 'input', 'output', 'function', 'social', 'mobile', 'storage', 'analysis', 'advanced'],
+    
+    /** Configure diagnostics options 
+     * - enabled:  When `enabled` is `true` (or unset), diagnostics data will
+     *   be available at http://localhost:1880/diagnostics  
+     * - ui: When `ui` is `true` (or unset), the action `show-system-info` will 
+     *   be available to logged in users of node-red editor  
+    */
+     diagnostics: {
+        /** enable or disable diagnostics endpoint. Must be set to `false` to disable */
+        enabled: true,
+        /** enable or disable diagnostics display in the node-red editor. Must be set to `false` to disable */
+        ui: true,
+    },
+    /** Configure runtimeState options 
+     * - enabled:  When `enabled` is `true` flows runtime can be Started/Stoped 
+     *   by POSTing to available at http://localhost:1880/flows/state  
+     * - ui: When `ui` is `true`, the action `core:start-flows` and 
+     *   `core:stop-flows` will be available to logged in users of node-red editor
+     *   Also, the deploy menu (when set to default) will show a stop or start button
+     */
+    runtimeState: {
+        /** enable or disable flows/state endpoint. Must be set to `false` to disable */
+        enabled: false,
+        /** show or hide runtime stop/start options in the node-red editor. Must be set to `false` to hide */
+        ui: false,
+    },
 
     // Configure the logging output
     logging: {
@@ -256,7 +282,7 @@ module.exports = {
             // debug - record information which is more verbose than info + info + warn + error + fatal errors
             // trace - record very detailed logging + debug + info + warn + error + fatal errors
             // off - turn off all logging (doesn't affect metrics or audit)
-            level: process.env.NODE_RED_LOG_LEVEL || "warn",
+            level: process.env.NODE_RED_LOG_LEVEL || "info",
             // Whether or not to include metric events in the log output
             metrics: false,
             // Whether or not to include audit events in the log output
@@ -273,5 +299,8 @@ module.exports = {
             // To enable the Projects feature, set this value to true
             enabled: false
         }
-    }
+    },
+
+    /** Allow the Function node to load additional npm modules directly */
+    functionExternalModules: true
 };
